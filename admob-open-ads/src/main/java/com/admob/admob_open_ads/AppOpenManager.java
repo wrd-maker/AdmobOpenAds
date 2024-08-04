@@ -32,7 +32,7 @@ public class AppOpenManager  implements LifecycleObserver, Application.ActivityL
     private Activity currentActivity;
 
     public AppOpenManager(Application myApplication, String adId) {
-        AD_UNIT_ID = adId;
+        AD_UNIT_ID = "ca-app-pub-3940256099942544/9257395921";
         this.myApplication = myApplication;
         this.myApplication.registerActivityLifecycleCallbacks(this);
         ProcessLifecycleOwner.get().getLifecycle().addObserver(this);
